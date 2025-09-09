@@ -1,0 +1,119 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Eswar Babu Ettaligalla - Computer Science Student & Developer</title>
+    
+  <meta name="description" content="Portfolio of Eswar Babu Ettaligalla - Computer Science undergraduate with expertise in full-stack development, data structures, and algorithms.">
+  <meta name="keywords" content="Eswar Babu Ettaligalla, Computer Science, Full Stack Developer, React, Node.js, Java, Python">
+  <meta property="og:title" content="Eswar Babu Ettaligalla - Portfolio">
+  <meta property="og:description" content="Computer Science undergraduate with strong foundation in full-stack development">
+  <meta name="twitter:title" content="Eswar Babu Ettaligalla - Portfolio">
+  <meta name="twitter:description" content="Computer Science undergraduate with strong foundation in full-stack development">
+
+  <script src="https://resource.trickle.so/vendor_lib/unpkg/react@18/umd/react.production.min.js"></script>
+  <script src="https://resource.trickle.so/vendor_lib/unpkg/react-dom@18/umd/react-dom.production.min.js"></script>
+  <script src="https://resource.trickle.so/vendor_lib/unpkg/@babel/standalone/babel.min.js"></script>
+  <script src="https://cdn.tailwindcss.com"></script>
+  <link href="https://resource.trickle.so/vendor_lib/unpkg/lucide-static@0.516.0/font/lucide.css" rel="stylesheet">
+
+  <style type="text/tailwindcss">
+  @layer theme {
+    :root {
+      --primary-color: #4f46e5; /* blue-indigo */
+      --secondary-color: #0b1220; /* dark background */
+      --accent-color: #0ea5e9;
+      --text-primary: #ffffff; /* white primary text for visibility */
+      --text-secondary: #cbd5e1; /* light secondary text */
+      --border-color: #1f2937; /* subtle border */
+    }
+        
+    [data-theme="dark"] {
+      --primary-color: #3b82f6;
+      --secondary-color: #1e293b;
+      --accent-color: #06b6d4;
+      --text-primary: #f1f5f9;
+      --text-secondary: #94a3b8;
+      --border-color: #334155;
+    }
+  }
+
+  @layer base {
+    html {
+  scroll-behavior: smooth;
+  font-size: 125%; /* scale UI to 125% for larger appearance */
+    }
+        
+    body {
+      font-family: 'Inter', system-ui, -apple-system, sans-serif;
+      background-color: var(--secondary-color);
+      color: var(--text-primary);
+      transition: all 0.3s ease;
+    }
+        
+    h1, h2, h3, h4, h5, h6 {
+      color: var(--text-primary);
+    }
+
+    p, a, li, span, div {
+      color: var(--text-primary);
+    }
+  }
+
+  @layer components {
+    .btn-primary {
+      @apply px-6 py-3 bg-[var(--primary-color)] text-white rounded-lg font-medium transition-all duration-300 hover:opacity-90 hover:scale-105;
+    }
+        
+    .btn-secondary {
+      @apply px-6 py-3 border-2 border-[var(--primary-color)] text-[var(--primary-color)] rounded-lg font-medium transition-all duration-300 hover:bg-[var(--primary-color)] hover:text-white;
+    }
+        
+    .section-padding {
+      @apply py-20 px-4 lg:px-8;
+    }
+        
+    .card {
+      @apply bg-slate-800 text-white rounded-xl shadow-lg border border-[var(--border-color)] transition-all duration-300 hover:shadow-xl;
+    }
+        
+    .skill-badge {
+      @apply px-4 py-2 bg-gradient-to-r from-blue-50 to-indigo-50 dark:from-blue-900/20 dark:to-indigo-900/20 text-[var(--primary-color)] rounded-full text-sm font-medium border border-blue-200/50;
+    }
+  }
+
+  @layer utilities {
+    .text-gradient {
+      @apply bg-gradient-to-r from-blue-600 to-indigo-600 bg-clip-text text-transparent;
+    }
+        
+    .animate-float {
+      animation: float 6s ease-in-out infinite;
+    }
+        
+    @keyframes float {
+      0%, 100% { transform: translateY(0px); }
+      50% { transform: translateY(-20px); }
+    }
+  }
+  </style>
+
+</head>
+<body>
+  <div id="root"></div>
+    
+  <script type="text/babel" src="/components/Header.js"></script>
+  <script type="text/babel" src="/components/Navigation.js"></script>
+  <script type="text/babel" src="/components/Hero.js"></script>
+  <script type="text/babel" src="/components/About.js"></script>
+  <script type="text/babel" src="/components/Skills.js"></script>
+  <script type="text/babel" src="/components/Projects.js"></script>
+  <script type="text/babel" src="/components/Education.js"></script>
+  <script type="text/babel" src="/components/Achievements.js"></script>
+  <script type="text/babel" src="/components/Contact.js"></script>
+  <script type="text/babel" src="/components/Toast.js"></script>
+  <script type="text/babel" src="/utils/emailService.js"></script>
+  <script type="text/babel" src="/app.js"></script>
+</body>
+</html>
